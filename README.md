@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+📰 HeadlineHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HeadlineHub is a responsive news web application built using React and Material UI. It fetches real-time news headlines from NewsAPI and displays categorized content with pagination, loading indicators, and dynamic routing.
 
-## Available Scripts
+🚀 Features
 
-In the project directory, you can run:
+Category-based news filtering
 
-### `npm start`
+Pagination (Previous / Next navigation)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Loading spinner for API requests
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Dynamic routing using React Router
 
-### `npm test`
+Environment variable support for API key
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Responsive card-based UI
 
-### `npm run build`
+Fallback image for missing news thumbnails
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Author, source badge, and published date (GMT format)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🛠 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React
 
-### `npm run eject`
+React Router (v6)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Material UI (MUI)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+NewsAPI
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+JavaScript (ES6)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+CSS
 
-## Learn More
+📦 Installation & Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone the repository:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+git clone https://github.com/patilnagesh03/Headline-Hub-News-Application.git
 
-### Code Splitting
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm install
 
-### Analyzing the Bundle Size
+Create a .env file in the root directory and add:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+REACT_APP_NEWS_API_KEY=your_api_key_here
 
-### Making a Progressive Web App
+Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm start
 
-### Advanced Configuration
+📌 API Limitation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project uses the free NewsAPI developer plan, which supports limited country-based filtering. Currently configured with country=us.
